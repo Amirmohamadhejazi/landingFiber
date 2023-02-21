@@ -4,8 +4,7 @@ html, body{
   padding: 0;
 }
 body{
-    padding: 40px 100px 0 100px;
-    /*background-color: hsl(216, 12%, 8%);*/
+    padding-top: 30px;
  }
 
 .flex-center{
@@ -14,9 +13,14 @@ body{
  align-items: center;
 }
 
-
+.cursor_pointer{
+    cursor: pointer;
+}
 .mt-60{
     margin-top: 60px;
+}
+.mb-60{
+    margin-bottom: 60px;
 }
 
 .trn3{
@@ -140,7 +144,7 @@ p{
     border-radius: 8px;
     overflow: hidden;
     padding: 0 50px 0 50px;
-    margin-bottom: 300px;
+
 }
 
 .cardicon{
@@ -210,7 +214,7 @@ p{
 
 @media only screen and (max-width: 500px) {
     body{
-        padding: 40px 40px 0 40px;
+        /*padding: 40px 40px 0 40px;*/
         /*background-color: hsl(216, 12%, 8%);*/
      }
 
