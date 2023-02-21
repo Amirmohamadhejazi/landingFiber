@@ -84,10 +84,10 @@ document.getElementById('Portfolio3profile').innerHTML = dataPortfolio3profile.m
                   </div>
                   <div class="ms-3 ">
                     <p class="c_Purple InterBold ">${item.name}</p>
-                    <p>$${item.price} in revenue</p>
+                    <p class="manualFontsizeMini">$${item.price} in revenue</p>
                   </div>
               </div>
-              <p class="mt-2 mb-2">${item.description}</p>
+              <p class="mt-2 mb-2 manualFontsizeMini">${item.description}</p>
               <div class="card btnSolid flex-center c_Purple InterBold">
                 view ${item.user} Portfolio
               </div>
