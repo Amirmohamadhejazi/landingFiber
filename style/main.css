@@ -1,0 +1,205 @@
+html, body{
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+}
+body{
+    padding: 40px 100px 0 100px;
+    /*background-color: hsl(216, 12%, 8%);*/
+ }
+
+.flex-center{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.mt-60{
+    margin-top: 60px;
+}
+
+.trn3{
+    transition: 0.3s;
+}
+p{
+    margin: 0;
+}
+
+/* c + bg */
+
+.bg_Purple{
+    background-color: #4d13d1
+}
+
+
+.c_Purple{
+    color: #4d13d1
+}
+
+.bg-white{
+    border-color: white;
+}
+/* c + bg */
+
+
+.manualFontsize{
+    font-size:  15px
+}
+
+.manualFontsizeMini{
+    font-size:  13px
+}
+
+
+.fwBold{
+    font-weight: 700;
+}
+.fwlight{
+    font-weight: 400;
+}
+
+
+.textJustify{
+    text-align: justify;
+}
+
+/* ******************************************** NavbarDesktop */
+.NavbarDesktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavbtnAuth{
+    
+    height: 45px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.MiddleNavbar{
+    width: 350px;
+    display: flex;
+    justify-content: end;
+}
+
+/* ******************************************** NavbarDesktop */
+/* .d_desktopNav{
+    display: block;
+} */
+.d_MobileNav{
+    display: none;
+
+}
+.directionRowcolumnMobileDesktop{
+    /* d-flex flex-row align-items-center */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.justifyBetweenMobileDesktop{
+    display: flex;
+    justify-content: space-between;
+}
+.w30w100MobileDesktop{
+    width: 30%;
+}
+
+.texDecoration{
+    
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.iconStar{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.w_50_w_100Mobile{
+    width: 50%;
+}
+
+.icon3optionsFiber{
+    width: 40px;
+}
+
+
+.boxgradient{
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0 50px 0 50px;
+    margin-bottom: 300px;
+}
+.w_50_w_100boxesinboxgradient{
+    width: 50%;
+}
+.boxPageimage{
+    width: 450px;
+    height: 450px;
+    border-radius: 8px 8px 0 0 ;
+    overflow: hidden;
+    bottom: 0;
+}
+
+
+@media only screen and (max-width: 950px) {
+    
+    .w_50_w_100Mobile{
+        width: 100%;
+    }
+    .justifyBetweenMobileDesktop{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 550px;
+    }
+
+    .directionRowcolumnMobileDesktop{
+        /* d-flex flex-row align-items-center */
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: baseline;
+    }
+
+    .w30w100MobileDesktop{
+        width: 100%;
+    }
+
+    
+.boxgradient{
+    height: 700px;
+    padding: 30px 50px 0 50px;
+}
+}
+
+@media only screen and (max-width: 750px) {
+    .w_50_w_100boxesinboxgradient{
+       width: 100%;
+    }
+    .d_desktopNav{
+        display: none;
+    }
+    .d_MobileNav{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    body{
+        padding: 40px 40px 0 40px;
+        /*background-color: hsl(216, 12%, 8%);*/
+     }
+
+}
