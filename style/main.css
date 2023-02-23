@@ -37,6 +37,9 @@ p{
 .text-right{
     text-align: left;
 }
+.text-justify{
+    text-align: justify;
+}
 
 /* ******************************************** c + bg */
 .bg_Purple{
@@ -257,20 +260,6 @@ button{
 .modal.right .modal-body {
     padding: 15px 15px 80px;
 }
-
-/*!*Left*!*/
-/*.modal.left.fade .modal-dialog{*/
-/*    left: -320px;*/
-/*    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;*/
-/*    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;*/
-/*    -o-transition: opacity 0.3s linear, left 0.3s ease-out;*/
-/*    transition: opacity 0.3s linear, left 0.3s ease-out;*/
-/*}*/
-
-/*.modal.left.fade.in .modal-dialog{*/
-/*    left: 0;*/
-/*}*/
-
 /*Right*/
 .modal.right.fade .modal-dialog {
     right: 0;
@@ -295,31 +284,13 @@ button{
     background-color: #FAFAFA;
 }
 
-
-/*.btn-demo {*/
-/*    margin: 15px;*/
-/*    padding: 10px 15px;*/
-/*    border-radius: 0;*/
-/*    font-size: 16px;*/
-/*    background-color: #FFFFFF;*/
-/*}*/
-
-/*.btn-demo:focus {*/
-/*    outline: 0;*/
-/*}*/
-
-/*.demo-footer {*/
-/*    position: fixed;*/
-/*    bottom: 0;*/
-/*    width: 100%;*/
-/*    padding: 15px;*/
-/*    background-color: #212121;*/
-/*    text-align: center;*/
-/*}*/
-
-/*.demo-footer > a {*/
-/*    text-decoration: none;*/
-/*    font-weight: bold;*/
-/*    font-size: 16px;*/
-/*    color: #fff;*/
-/*}*/
+#myCarousel{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.carousel-inner{
+    width: 90%!important;
+    border-radius: 5px;
+    overflow: hidden;
+}
