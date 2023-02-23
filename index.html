@@ -14,19 +14,22 @@
         <div class="NavbarDesktop w-100 d_desktopNav">
             <span class="InterBold cursor_pointer">Fiber</span>
             <div class="MiddleNavbar">
-                <span class="cursor_pointer">Cummunity</span>
+                <span class="cursor_pointer">Community</span>
                 <span class="ms-2 cursor_pointer">Pricing</span>
-                <span class="ms-2 cursor_pointer">Feauters</span>
+                <span class="ms-2 cursor_pointer">Features</span>
             </div>
-
             <div class="d-flex flex-row ">
                 <div class="NavbtnAuth InterBold flex-center cursor_pointer" style="width:90px">  Sign In </div>
-                <div class="NavbtnAuth InterBold flex-center bg_Purple text-white cursor_pointer"  style="width:90px">  Sign Up </div>
+                <div class="NavbtnAuth InterBold flex-center bg_Purple text-white cursor_pointer"  style="width:90px" onclick="RedirectToSignUp()">  Sign Up </div>
             </div>
         </div>
         <div class="d_MobileNav">
             <span class="InterBold cursor_pointer">Fiber</span>
-            <img src="./pic/Hamburger Menu.svg"  alt="">
+
+
+            <button type="button" class="btn btn-demo flex-center" data-toggle="modal" data-target="#myModal2">
+                <img src="./pic/Hamburger Menu.svg"  alt="">
+            </button>
         </div>
 <!--    ************************ Nav Mobile desktop-->
 
@@ -130,8 +133,39 @@
                 <span class="InterLight cursor_pointer mt-2">Janice Dave</span>
             </div>
         </div>
+
+    <!-- Modal -->
+    <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button"  data-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="modal-body d-flex flex-column">
+                    <span class="mt-2 cursor_pointer">Community</span>
+                    <span class="mt-2 cursor_pointer">Pricing</span>
+                    <span class="mt-2 cursor_pointer">Features</span>
+                    <div class="w-100 flex-center d-flex flex-column mt-60">
+                        <div class="NavbtnAuth InterBold flex-center bg_Purple text-white cursor_pointer"  style="width:90px" onclick="RedirectToSignUp()">  Sign Up </div>
+                        <div class="NavbtnAuth InterBold flex-center cursor_pointer" style="width:90px">  Sign In </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- Modal -->
+
     </body>
 
+    <script src="./js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>

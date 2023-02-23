@@ -95,3 +95,7 @@ document.getElementById('Portfolio3profile').innerHTML = dataPortfolio3profile.m
           </div>
     `
     ).join('')
+
+function RedirectToSignUp(){
+    window.location.href = "./../components/Signup/index.html"
+}
