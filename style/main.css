@@ -1,11 +1,11 @@
+/* ******************************************** Global Style */
 html, body{
-  /* height: 100%; */
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 body{
     padding-top: 30px;
- }
+}
 
 .flex-center{
  display: flex;
@@ -26,12 +26,12 @@ body{
 .trn3{
     transition: 0.3s;
 }
+
 p{
     margin: 0;
 }
 
-/* c + bg */
-
+/* ******************************************** c + bg */
 .bg_Purple{
     background-color: #4d13d1
 }
@@ -44,9 +44,8 @@ p{
 .bg-white{
     border-color: white;
 }
-/* c + bg */
 
-
+/* ******************************************** Font */
 .manualFontsize{
     font-size:  15px
 }
@@ -55,20 +54,7 @@ p{
     font-size:  13px
 }
 
-
-.fwBold{
-    font-weight: 700;
-}
-.fwlight{
-    font-weight: 400;
-}
-
-
-.textJustify{
-    text-align: justify;
-}
-
-/* ******************************************** NavbarDesktop */
+/* ******************************************** Navbar */
 .NavbarDesktop{
     display: flex;
     flex-direction: row;
@@ -82,10 +68,8 @@ p{
     overflow: hidden;
 }
 
-
 .btnSolid{
     height: 45px;
-    
 }
 
 .MiddleNavbar{
@@ -94,16 +78,14 @@ p{
     justify-content: end;
 }
 
-/* ******************************************** NavbarDesktop */
-/* .d_desktopNav{
-    display: block;
-} */
 .d_MobileNav{
     display: none;
 
 }
+
+
+/****************************************************************************/
 .directionRowcolumnMobileDesktop{
-    /* d-flex flex-row align-items-center */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -163,47 +145,53 @@ p{
     overflow: hidden;
     bottom: 0;
 }
+/****************************************************************************/
 
-.justify_footer{
-    margin-top: 300px;
-    display: flex ;
-    justify-content: space-between;
-    align-items: center;
+
+/* ******************************************** Footer */
+.textFiberEndPage{
+    width: 400px;
 }
-.itemFiberFooter{
-    width: 500px;
-}
-.itemsFooter{
-    width: 300px;
-    margin-top: 40px;
+
+.footerGrid{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+
+
 }
 
-@media only screen and (max-width: 1000px) {
 
-    .justify_footer{
-        display: flex ;
-        flex-direction: column;
+/* ******************************************** Media */
+@media only screen and (max-width: 750px) {
+    .w_50_w_100boxesinboxgradient{
+        width: 100%;
+    }
+    .d_desktopNav{
+        display: none;
+    }
+    .d_MobileNav{
+        display: flex;
         justify-content: space-between;
-        align-items: start;
+    }
+    .footerGrid{
+        margin-top: 20%;
     }
 }
+
 @media only screen and (max-width: 950px) {
-    
+
     .w_50_w_100Mobile{
         width: 100%;
     }
-    .justifyBetweenMobileDesktop{
+
+    .justifyBetweenMobileDesktop {
         display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    height: 550px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
     }
 
     .directionRowcolumnMobileDesktop{
-        /* d-flex flex-row align-items-center */
         display: flex;
         flex-direction: column-reverse;
         align-items: baseline;
@@ -213,36 +201,21 @@ p{
         width: 100%;
     }
 
-    
-.boxgradient{
-    height: 700px;
-    padding: 30px 50px 0 50px;
-}
+
+    .boxgradient{
+        height: 700px;
+        padding: 30px 50px 0 50px;
+    }
 }
 
-@media only screen and (max-width: 750px) {
-    .itemFiberFooter{
+@media only screen and (max-width: 991px) {
+    .textFiberEndPage{
         width: 300px;
     }
-    .w_50_w_100boxesinboxgradient{
-       width: 100%;
-    }
-    .d_desktopNav{
-        display: none;
-    }
-    .d_MobileNav{
+    .footerGrid{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-    
+        height: 50rem;
     }
-
-}
-
-
-@media only screen and (max-width: 500px) {
-    body{
-        /*padding: 40px 40px 0 40px;*/
-        /*background-color: hsl(216, 12%, 8%);*/
-     }
-
 }

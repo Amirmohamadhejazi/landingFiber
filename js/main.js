@@ -33,7 +33,7 @@ let data3OptionFiber = [
 
 document.getElementById('3OptionsFiberDetail').innerHTML = data3OptionFiber.map(item =>
     `
-    <div class="w30w100MobileDesktop d-flex flex-column">
+    <div class="w30w100MobileDesktop d-flex flex-column mt-4">
         <div class="icon3optionsFiber">
             <img src=${item.img} width="100%" height="100%" alt="time">
         </div>
@@ -76,7 +76,7 @@ let dataPortfolio3profile = [
 
 document.getElementById('Portfolio3profile').innerHTML = dataPortfolio3profile.map(item =>
     `
-    <div class="card w30w100MobileDesktop   mt-2">
+    <div class="card w30w100MobileDesktop mt-4">
             <div class="card-body">
               <div class="d-flex flex-row">
                 <div class="cardicon">
